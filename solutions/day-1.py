@@ -7,7 +7,8 @@ def get_addents(data: List[int], answer: int, amount: int) -> List[int]:
     """
     Returns the addents from the data list whose sum is the provided answer.
     
-    Finds the solution that has the provided 'amount' of addents.
+    'answer' is the target sum.
+    'amount' indicates the number of addents the answer has.
     """
     for addents in itertools.combinations(data, amount):
         if sum(addents) == answer:
