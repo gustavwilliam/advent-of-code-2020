@@ -4,7 +4,7 @@ from typing import List
 def is_tree(pattern: List[str], row: int, col: int) -> bool:
     """Checks if the input pattern has a tree at the input coordinates."""
     width = len(pattern[0])    
-    pat_col = col-col//(width-1)*(width-1)
+    pat_col = col-col//(width-1)*(width-1)  # Turn width into an index
 
     if pattern[row][pat_col] == "#":
         return True
